@@ -1,6 +1,6 @@
 {
   "name": "@open-finance/skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Open-source Claude Code agent skills for financial analysis",
   "main": "cli/index.js",
   "bin": {
