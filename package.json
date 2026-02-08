@@ -1,0 +1,61 @@
+{
+  "name": "@open-finance/skills",
+  "version": "1.0.0",
+  "description": "Open-source Claude Code agent skills for financial analysis",
+  "main": "cli/index.js",
+  "bin": {
+    "openfinance-skills": "cli/index.js"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build": "node scripts/build.js",
+    "generate-manifest": "node scripts/generate-manifest.js",
+    "prebuild": "npm run validate",
+    "postbuild": "npm run generate-manifest",
+    "test": "node --test cli/__tests__/*.test.js",
+    "lint": "eslint cli/ scripts/",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "cli/",
+    "dist/",
+    "skills.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "claude-code",
+    "skills",
+    "finance",
+    "banking",
+    "israel",
+    "hebrew",
+    "agent",
+    "ai"
+  ],
+  "author": "Open Finance AI <hello@open-finance.ai>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/open-finance-ai/agent-skills.git"
+  },
+  "homepage": "https://github.com/open-finance-ai/agent-skills#readme",
+  "bugs": {
+    "url": "https://github.com/open-finance-ai/agent-skills/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "archiver": "^7.0.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "extract-zip": "^2.0.1",
+    "ora": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.2.0"
+  }
+}

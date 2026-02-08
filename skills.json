@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "skills": [
+    {
+      "name": "bank-account-analysis",
+      "version": "1.0.0",
+      "description": "Israeli bank account analysis with Hebrew PDF reports",
+      "descriptionHe": "ניתוח חשבון בנק עם דוחות PDF בעברית",
+      "category": "finance",
+      "tags": [
+        "banking",
+        "israel",
+        "hebrew",
+        "pdf"
+      ],
+      "pythonDependencies": [
+        "reportlab",
+        "matplotlib",
+        "python-bidi"
+      ],
+      "fileSize": "15KB"
+    }
+  ]
+}
