@@ -1,4 +1,21 @@
-# @open-finance/skills
+# @open-finance/skills — deprecated
+
+> [!IMPORTANT]
+> **This package and repository are no longer maintained.** Agent skills for
+> Open Finance now ship inside the [`financy`](https://www.npmjs.com/package/financy)
+> CLI, so a skill can never drift from the commands it drives:
+>
+> ```sh
+> npm install -g financy
+> financy skills install --all
+> ```
+>
+> Source and issues: **<https://github.com/open-finance-ai/financy>**
+>
+> This repository is archived and kept read-only for reference. The
+> `bank-account-analysis` skill below has no equivalent in `financy` yet — it
+> analyses spreadsheet exports the user uploads, rather than reading the
+> Open Finance API — so it remains readable here.
 
 **Open-source Claude Code agent skills for financial analysis**
 
